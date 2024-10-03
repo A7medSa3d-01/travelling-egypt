@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Vist Egypt</title>
+    <link rel="icon" href="/public/logo-2.jpeg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Top Header -->
+    <section class="top-header flexAround">
+      <div class="flex gap-12 text-14 ml-8 usm-icon">
+        <a class="phone text-white text-secondary flex gap-6"
+          ><i class="fa-solid fa-phone"></i>
+          <p class="phone-no">+(20)1095416452</p></a
+        >
+        <a class="email text-white text-secondary text-white mobile"
+          ><i class="fa-solid fa-envelope"></i> ahmed@gmail.com</a
+        >
+      </div>
+      <div class="text-14 text-center ml-8">
+        <a href="/contactus.html" class="btn">
+          <i class="fa-regular fa-bookmark"></i> Book Now
+        </a>
+      </div>
+      <div class="flexAround text-16 mr-8 gap-20">
+        <a href="#"><i class="fa-solid fa-phone mobile-visb-2"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope mobile-visb"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+      </div>
+    </section>
+    <!-- End Top Header -->
+
+    <!-- Start Header -->
+    <header id="header" class="header">
+      <div class="flex-between max-padd-container">
+        <a href="/" class="logo">
+          <img
+            src="/public/logo-2.jpeg"
+            alt="Logo"
+            width="40"
+            height="40"
+          />
+        </a>
+        <nav id="mobile-nav" class="mobile-nav">
+          <div class="close-menu" id="close-menu">✖</div>
+          <div class="nav-item"><a href="/">Home</a></div>
+          <div class="nav-item">
+            <a href="trips.html" style="color: var(--secondary-color)"
+              >All Trips</a
+            >
+          </div>
+          <div class="nav-item"><a href="blog.html">Blog</a></div>
+          <div class="nav-item"><a href="contactus.html">Contact Us</a></div>
+        </nav>
+        <nav class="desktop-nav">
+          <div class="nav-item"><a href="/">Home</a></div>
+          <div class="nav-item">
+            <a href="trips.html" style="color: var(--secondary-color)"
+              >All Trips</a
+            >
+          </div>
+          <div class="nav-item"><a href="blog.html">Blog</a></div>
+          <div class="nav-item"><a href="contactus.html">Contact Us</a></div>
+        </nav>
+        <div class="sign-btn">
+          <span><i class="fa-regular fa-user"></i> Sign up</span>
+        </div>
+        <div class="menu-icon text-12" id="menu-icon">☰</div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Popular Trip Section -->
+    <div class="all-trips-container mt-120">
+      <div class="all-trips-sort-section flexAround">
+        <div>
+          <label for="luxor-sort">Luxor</label>
+          <input type="checkbox" name="luxor-sort" id="luxor-sort" />
+        </div>
+        <div>
+          <label for="aswan">Aswan</label>
+          <input type="checkbox" name="aswan" id="aswan-sort" />
+        </div>
+        <div>
+          <label for="hurghada">Hurghada</label>
+          <input type="checkbox" name="hurghada" id="hurghada" />
+        </div>
+        <div>
+          <label for="cairo-sort">Cairo</label>
+          <input type="checkbox" name="cairo-sort" id="cairo-sort" />
+        </div>
+        <div>
+          <label for="giza-sort">Giza</label>
+          <input type="checkbox" name="giza-sort" id="giza-sort" />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="heading">Popular Trips</h1>
+      <div class="trip-grid">
+        <div class="trip-card">
+          <a href="">
+            <div class="image-container">
+              <img
+                src="public/luxor-2.jpg"
+                alt="Luxor Temple"
+                class="trip-image"
+              />
+            </div>
+            <div class="trip-details">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="trip-name">Luxor Temple</div>
+              <p class="trip-city">
+                <i class="fas fa-map-marker-alt"></i> Luxor
+              </p>
+              <div class="divider"></div>
+              <div class="review-info">
+                <div class="rating">5/5</div>
+                <h1 class="review-text">
+                  Excellent <span class="review-count">(20 Reviews)</span>
+                </h1>
+              </div>
+              <div class="trip-price">
+                <span>From:</span>
+                <span class="price">$75</span>
+                <span class="duration"
+                  >/ <i class="fas fa-clock"></i> 2 hours</span
+                >
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="trip-card">
+          <a href="">
+            <div class="image-container">
+              <img
+                src="public/giza.jpg"
+                alt="Luxor Temple"
+                class="trip-image"
+              />
+            </div>
+            <div class="trip-details">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="trip-name">Luxor Temple</h1>
+              <p class="trip-city">
+                <i class="fas fa-map-marker-alt"></i> Luxor
+              </p>
+              <div class="divider"></div>
+              <div class="review-info">
+                <div class="rating">5/5</div>
+                <h1 class="review-text">
+                  Excellent <span class="review-count">(20 Reviews)</span>
+                </h1>
+              </div>
+              <div class="trip-price">
+                <span>From:</span>
+                <span class="price">$75</span>
+                <span class="duration"
+                  >/ <i class="fas fa-clock"></i> 2 hours</span
+                >
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="trip-card">
+          <a href="">
+            <div class="image-container">
+              <img
+                src="public/hurghada.jpg"
+                alt="Luxor Temple"
+                class="trip-image"
+              />
+            </div>
+            <div class="trip-details">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="trip-name">Luxor Temple</div>
+              <p class="trip-city">
+                <i class="fas fa-map-marker-alt"></i> Luxor
+              </p>
+              <div class="divider"></div>
+              <div class="review-info">
+                <div class="rating">5/5</div>
+                <h1 class="review-text">
+                  Excellent <span class="review-count">(20 Reviews)</span>
+                </h1>
+              </div>
+              <div class="trip-price">
+                <span>From:</span>
+                <span class="price">$75</span>
+                <span class="duration"
+                  >/ <i class="fas fa-clock"></i> 2 hours</span
+                >
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="trip-card">
+          <a href="">
+            <div class="image-container">
+              <img
+                src="public/cairo-2.jpg"
+                alt="Luxor Temple"
+                class="trip-image"
+              />
+            </div>
+            <div class="trip-details">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="trip-name">Luxor Temple</div>
+              <p class="trip-city">
+                <i class="fas fa-map-marker-alt"></i> Luxor
+              </p>
+              <div class="divider"></div>
+              <div class="review-info">
+                <div class="rating">5/5</div>
+                <h1 class="review-text">
+                  Excellent <span class="review-count">(20 Reviews)</span>
+                </h1>
+              </div>
+              <div class="trip-price">
+                <span>From:</span>
+                <span class="price">$75</span>
+                <span class="duration"
+                  >/ <i class="fas fa-clock"></i> 2 hours</span
+                >
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="trip-card">
+          <a href="">
+            <div class="image-container">
+              <img
+                src="public/luxor-2.jpg"
+                alt="Luxor Temple"
+                class="trip-image"
+              />
+            </div>
+            <div class="trip-details">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="trip-name">Luxor Temple</div>
+              <p class="trip-city">
+                <i class="fas fa-map-marker-alt"></i> Luxor
+              </p>
+              <div class="divider"></div>
+              <div class="review-info">
+                <div class="rating">5/5</div>
+                <h1 class="review-text">
+                  Excellent <span class="review-count">(20 Reviews)</span>
+                </h1>
+              </div>
+              <div class="trip-price">
+                <span>From:</span>
+                <span class="price">$75</span>
+                <span class="duration"
+                  >/ <i class="fas fa-clock"></i> 2 hours</span
+                >
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="trip-card">
+          <a href="">
+            <div class="image-container">
+              <img
+                src="public/luxor-3.jpg"
+                alt="Luxor Temple"
+                class="trip-image"
+              />
+            </div>
+            <div class="trip-details">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="trip-name">Luxor Temple</h1>
+              <p class="trip-city">
+                <i class="fas fa-map-marker-alt"></i> Luxor
+              </p>
+              <div class="divider"></div>
+              <div class="review-info">
+                <div class="rating">5/5</div>
+                <h1 class="review-text">
+                  Excellent <span class="review-count">(20 Reviews)</span>
+                </h1>
+              </div>
+              <div class="trip-price">
+                <span>From:</span>
+                <span class="price">$75</span>
+                <span class="duration"
+                  >/ <i class="fas fa-clock"></i> 2 hours</span
+                >
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="trip-card">
+          <a href="">
+            <div class="image-container">
+              <img
+                src="public/aswan.jpg"
+                alt="Luxor Temple"
+                class="trip-image"
+              />
+            </div>
+            <div class="trip-details">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="trip-name">Luxor Temple</div>
+              <p class="trip-city">
+                <i class="fas fa-map-marker-alt"></i> Luxor
+              </p>
+              <div class="divider"></div>
+              <div class="review-info">
+                <div class="rating">5/5</div>
+                <h1 class="review-text">
+                  Excellent <span class="review-count">(20 Reviews)</span>
+                </h1>
+              </div>
+              <div class="trip-price gap-12">
+                <span>From:</span>
+                <span class="price">$75</span>
+                <span class="duration"
+                  >/ <i class="fas fa-clock"></i> 2 hours</span
+                >
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End Popular Trip Section -->
+    <!-- Start Scroll To Top -->
+    <span class="up"><i class="fa-solid fa-angles-up"></i></span>
+    <!-- End Scroll To Top -->
+    <!-- Start Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Contact Info</h3>
+          <p>Open 24 7.</p>
+          <a href="#"
+            ><i class="fa-solid fa-envelope"></i> admin@travellingegypt.com</a
+          ><br />
+          <a href="#"><i class="fa-solid fa-phone"></i> +(20)1095416452</a
+          ><br />
+        </div>
+        <div class="footer-column">
+          <h3>Destinations</h3>
+          <ul>
+            <li>Luxor</li>
+            <li>Aswan</li>
+            <li>Cairo</li>
+            <li>Giza</li>
+            <li>Hurghada</li>
+          </ul>
+        </div>
+        <!-- Activities Column -->
+        <div class="footer-column">
+          <h3>Activities</h3>
+          <ul>
+            <li>Nile Cruise</li>
+            <li>City Tour</li>
+            <li>Hot Air Balloon</li>
+            <li>Boating</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Trip Types</h3>
+          <ul>
+            <li>Budget Travel</li>
+            <li>Solo Traveler</li>
+            <li>Couples</li>
+            <li>Cultural</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom flexCenter">
+        <p>Copyright &copy;2024 Traveling Egypt.</p>
+        <div class="text-16 mr-8 gap-12 flex">
+          <a href="#"><i class="fa-solid fa-phone mobile-visb-2"></i></a>
+          <a href="#"><i class="fa-solid fa-envelope mobile-visb"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="main.js"></script>
+  </body>
+</html>

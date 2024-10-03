@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Vist Egypt</title>
+    <link rel="icon" href="/public/logo-2.jpeg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Top Header -->
+    <section class="top-header flexAround">
+      <div class="flex gap-12 text-14 ml-8 usm-icon">
+        <a class="phone text-white text-secondary flex gap-6"
+          ><i class="fa-solid fa-phone"></i>
+          <p class="phone-no">+(20)1095416452</p></a
+        >
+        <a class="email text-white text-secondary text-white mobile"
+          ><i class="fa-solid fa-envelope"></i> ahmed@gmail.com</a
+        >
+      </div>
+      <div class="text-14 text-center ml-8">
+        <a href="/contactus.html" class="btn">
+          <i class="fa-regular fa-bookmark"></i> Book Now
+        </a>
+      </div>
+      <div class="flexAround text-16 mr-8 gap-20">
+        <a href="#"><i class="fa-solid fa-phone mobile-visb-2"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope mobile-visb"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+      </div>
+    </section>
+    <!-- End Top Header -->
+
+    <!-- Start Header -->
+    <header id="header" class="header">
+      <div class="flex-between max-padd-container">
+        <a href="/" class="logo">
+          <img
+            src="/public/logo-2.jpeg"
+            alt="Logo"
+            width="40"
+            height="40"
+          />
+        </a>
+        <nav id="mobile-nav" class="mobile-nav">
+          <div class="close-menu" id="close-menu">✖</div>
+          <div class="nav-item">
+            <a href="/" class="active" style="color: var(--secondary-color)"
+              >Home</a
+            >
+          </div>
+          <div class="nav-item"><a href="trips.html">All Trips</a></div>
+          <div class="nav-item"><a href="blog.html">Blog</a></div>
+          <div class="nav-item"><a href="contactus.html">Contact Us</a></div>
+        </nav>
+        <nav class="desktop-nav">
+          <div class="nav-item">
+            <a href="/" style="color: var(--secondary-color)">Home</a>
+          </div>
+          <div class="nav-item"><a href="trips.html">All Trips</a></div>
+          <div class="nav-item"><a href="blog.html">Blog</a></div>
+          <div class="nav-item"><a href="contactus.html">Contact Us</a></div>
+        </nav>
+        <div class="sign-btn">
+          <span><i class="fa-regular fa-user"></i> Sign up</span>
+        </div>
+        <div class="menu-icon text-12" id="menu-icon">☰</div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Hero Section -->
+    <section class="search-section mt-20">
+      <div class="overlay"></div>
+      <video
+        class="background-video"
+        src="./public/video-2.mp4"
+        muted
+        autoplay
+        loop
+      ></video>
+      <div class="content-container">
+        <div class="text-content">
+          <span class="subheading"
+            >Find the Most Beautiful & Historic Places Around Egypt</span
+          >
+          <h2 class="myta">Make Your Tour Amazing With Us</h2>
+        </div>
+        <form class="search-form">
+          <div class="sfnt"><h2>Search for your trip</h2></div>
+          <div class="form-group">
+            <label for="travellers">Select No of Travellers:</label>
+            <select id="travellers">
+              <option value="1 Adult">1 adult</option>
+              <option value="2 Adults">2 Adults</option>
+              <option value="3 Adults">3 Adults</option>
+              <option value="4 Adults">4 Adults</option>
+              <option value="5 Adults">5 Adults</option>
+              <option value="6 Adults">6 Adults</option>
+              <option value="7 Adults">7 Adults</option>
+              <option value="8 Adults">8 Adults</option>
+              <option value="9 Adults">9 Adults</option>
+              <option value="10 Adults">10 Adults</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="date">Select your date:</label>
+            <input type="date" id="date" />
+          </div>
+          <div class="form-group">
+            <label for="destination">Select destination:</label>
+            <select id="destination">
+              <option value="destination1">Luxor</option>
+              <option value="destination2">Aswan</option>
+              <option value="destination3">Hurgada</option>
+              <option value="destination4">Cairo</option>
+              <option value="destination5">Giza</option>
+              <!-- Add more options as needed -->
+            </select>
+          </div>
+        </form>
+        <div class="form-submit mt-8">
+          <a href="trips.html">
+            <input type="submit" value="Search" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section -->
+    <!-- Start Top Destinations -->
+    <h1 class="heading">Top destinations</h1>
+    <div class="slider">
+      <div class="slides">
+        <div class="slide">
+          <img src="/public/aswan-2.jpg" alt="Image 1" />
+          <h2>Aswan</h2>
+          <p>aswan</p>
+        </div>
+        <div class="slide">
+          <img src="/public/luxor-2.jpg" alt="Image 1" />
+          <h2>Luxor</h2>
+          <p>luxor</p>
+        </div>
+        <div class="slide">
+          <img src="/public/cairo-2.jpg" alt="Image 1" />
+          <h2>Cairo</h2>
+          <p>cairo</p>
+        </div>
+        <div class="slide">
+          <img src="/public/hurghada.jpg" alt="Image 1" />
+          <h2>Hurghada</h2>
+          <p>hurghada</p>
+        </div>
+        <div class="slide">
+          <img src="/public/giza.jpg" alt="Image 1" />
+          <h2>Giza</h2>
+          <p>giza</p>
+        </div>
+        <div class="slide">
+          <img src="/public/luxor.jpg" alt="Image 1" />
+          <h2>Luxor</h2>
+          <p>luxor</p>
+        </div>
+        <div class="slide">
+          <img src="/public/aswan.jpg" alt="Image 1" />
+          <h2>Aswan</h2>
+          <p>aswan</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Top Destinations -->
+    <!-- Start Major Places Section -->
+    <section class="featured-tours">
+      <h1 class="heading">Featured Tours</h1>
+      <h2>Beautiful Places In Egypt</h2>
+      <div class="tour-cards">
+        <div>
+          <div class="tour-card">
+            <img src="/public/karnak.jpg" alt="Luxor" />
+            <div class="packages">3 packages</div>
+            <div class="card-content">
+              <h3>Luxor</h3>
+              <p>Starting from $1500</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="tour-card">
+            <img src="/public/giza.jpg" alt="Giza" />
+            <div class="packages">8 packages</div>
+            <div class="card-content">
+              <h3>Giza</h3>
+              <p>Starting from $1900</p>
+            </div>
+          </div>
+          <div class="tour-card">
+            <img src="/public/cairo-2.jpg" alt="Cairo" />
+            <div class="packages">3 packages</div>
+            <div class="card-content">
+              <h3>Cairo</h3>
+              <p>Starting from $1200</p>
+            </div>
+          </div>
+        </div>
+        <div class="tour-card-mobile-nav">
+          <div class="tour-card">
+            <img src="/public/hurghada.jpg" alt="Hurghada" />
+            <div class="packages">3 packages</div>
+            <div class="card-content">
+              <h3>Hurghada</h3>
+              <p>Starting from $1200</p>
+            </div>
+          </div>
+          <div class="tour-card">
+            <img src="/public/aswan.jpg" alt="Aswan" />
+            <div class="packages">3 packages</div>
+            <div class="card-content">
+              <h3>Aswan</h3>
+              <p>Starting from $1200</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Major Places Section -->
+    <!-- Start Popular Trip Section -->
+    <div class="container">
+      <h1 class="heading">Popular Trips</h1>
+      <div class="trip-grid">
+        <div class="trip-card">
+          <a href="">
+            <div class="image-container">
+              <img
+                src="public/luxor-2.jpg"
+                alt="Luxor Temple"
+                class="trip-image"
+              />
+            </div>
+            <div class="trip-details">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="trip-name">Luxor Temple</div>
+              <p class="trip-city">
+                <i class="fas fa-map-marker-alt"></i> Luxor
+              </p>
+              <div class="divider"></div>
+              <div class="review-info">
+                <div class="rating">5/5</div>
+                <h1 class="review-text">
+                  Excellent <span class="review-count">(20 Reviews)</span>
+                </h1>
+              </div>
+              <div class="trip-price">
+                <span>From:</span>
+                <span class="price">$75</span>
+                <span class="duration"
+                  >/<i class="fas fa-clock"></i> 2 hours</span
+                >
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="trip-card">
+          <a href="">
+            <div class="image-container">
+              <img
+                src="public/giza.jpg"
+                alt="Luxor Temple"
+                class="trip-image"
+              />
+            </div>
+            <div class="trip-details">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="trip-name">Luxor Temple</h1>
+              <p class="trip-city">
+                <i class="fas fa-map-marker-alt"></i> Luxor
+              </p>
+              <div class="divider"></div>
+              <div class="review-info">
+                <div class="rating">5/5</div>
+                <h1 class="review-text">
+                  Excellent <span class="review-count">(20 Reviews)</span>
+                </h1>
+              </div>
+              <div class="trip-price">
+                <span>From:</span>
+                <span class="price">$75</span>
+                <span class="duration"
+                  >/<i class="fas fa-clock"></i> 2 hours</span
+                >
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="trip-card">
+          <a href="">
+            <div class="image-container">
+              <img
+                src="public/hurghada.jpg"
+                alt="Luxor Temple"
+                class="trip-image"
+              />
+            </div>
+            <div class="trip-details">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="trip-name">Luxor Temple</div>
+              <p class="trip-city">
+                <i class="fas fa-map-marker-alt"></i> Luxor
+              </p>
+              <div class="divider"></div>
+              <div class="review-info">
+                <div class="rating">5/5</div>
+                <h1 class="review-text">
+                  Excellent <span class="review-count">(20 Reviews)</span>
+                </h1>
+              </div>
+              <div class="trip-price">
+                <span>From:</span>
+                <span class="price">$75</span>
+                <span class="duration"
+                  >/<i class="fas fa-clock"></i> 2 hours</span
+                >
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="trip-card">
+          <a href="">
+            <div class="image-container">
+              <img
+                src="public/cairo-2.jpg"
+                alt="Luxor Temple"
+                class="trip-image"
+              />
+            </div>
+            <div class="trip-details">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="trip-name">Luxor Temple</div>
+              <p class="trip-city">
+                <i class="fas fa-map-marker-alt"></i> Luxor
+              </p>
+              <div class="divider"></div>
+              <div class="review-info">
+                <div class="rating">5/5</div>
+                <h1 class="review-text">
+                  Excellent <span class="review-count">(20 Reviews)</span>
+                </h1>
+              </div>
+              <div class="trip-price">
+                <span>From:</span>
+                <span class="price">$75</span>
+                <span class="duration"
+                  >/<i class="fas fa-clock"></i> 2 hours</span
+                >
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="trip-card">
+          <a href="">
+            <div class="image-container">
+              <img
+                src="public/luxor-2.jpg"
+                alt="Luxor Temple"
+                class="trip-image"
+              />
+            </div>
+            <div class="trip-details">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="trip-name">Luxor Temple</div>
+              <p class="trip-city">
+                <i class="fas fa-map-marker-alt"></i> Luxor
+              </p>
+              <div class="divider"></div>
+              <div class="review-info">
+                <div class="rating">5/5</div>
+                <h1 class="review-text">
+                  Excellent <span class="review-count">(20 Reviews)</span>
+                </h1>
+              </div>
+              <div class="trip-price">
+                <span>From:</span>
+                <span class="price">$75</span>
+                <span class="duration"
+                  >/<i class="fas fa-clock"></i> 2 hours</span
+                >
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="trip-card">
+          <a href="">
+            <div class="image-container">
+              <img
+                src="public/luxor-3.jpg"
+                alt="Luxor Temple"
+                class="trip-image"
+              />
+            </div>
+            <div class="trip-details">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="trip-name">Luxor Temple</h1>
+              <p class="trip-city">
+                <i class="fas fa-map-marker-alt"></i> Luxor
+              </p>
+              <div class="divider"></div>
+              <div class="review-info">
+                <div class="rating">5/5</div>
+                <h1 class="review-text">
+                  Excellent <span class="review-count">(20 Reviews)</span>
+                </h1>
+              </div>
+              <div class="trip-price">
+                <span>From:</span>
+                <span class="price">$75</span>
+                <span class="duration"
+                  >/<i class="fas fa-clock"></i> 2 hours</span
+                >
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="trip-card">
+          <a href="">
+            <div class="image-container">
+              <img
+                src="public/aswan.jpg"
+                alt="Luxor Temple"
+                class="trip-image"
+              />
+            </div>
+            <div class="trip-details">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="trip-name">Luxor Temple</div>
+              <p class="trip-city">
+                <i class="fas fa-map-marker-alt"></i> Luxor
+              </p>
+              <div class="divider"></div>
+              <div class="review-info">
+                <div class="rating">5/5</div>
+                <h1 class="review-text">
+                  Excellent <span class="review-count">(20 Reviews)</span>
+                </h1>
+              </div>
+              <div class="trip-price gap-12">
+                <span>From:</span>
+                <span class="price">$75</span>
+                <span class="duration"
+                  >/<i class="fas fa-clock"></i> 2 hours</span
+                >
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End Popular Trip Section -->
+    <!-- Start Blog -->
+    <div class="blog-section">
+      <h1 class="heading">Our Blog</h1>
+      <div class="article-card">
+        <div class="article-meta">
+          <div
+            class="article-photo"
+            style="background-image: url(/public/giza.jpg)"
+          ></div>
+          <ul class="article-details">
+            <li class="article-author">
+              <a href="#"><i class="fa-solid fa-location-dot"></i> Pyramids</a>
+            </li>
+            <li class="article-date">
+              <i class="fa-solid fa-building-columns"></i> Giza
+            </li>
+          </ul>
+        </div>
+        <div class="article-description">
+          <h1>Giza Pyramids</h1>
+          <h2>ancient masonry structures located in Egypt.</h2>
+          <p>
+            One of the most mysterious Seven Wonders of the Ancient World (and
+            the only one still standing), Pyramid of Khafre, and Pyramid of
+            Menkaure—still live up to more than 4,000 years of hype...
+          </p>
+          <p class="article-read-more">
+            <a href="blog.html">Read More</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="article-card alt">
+        <div class="article-meta">
+          <div
+            class="article-photo"
+            style="background-image: url(/public/cairo.avif)"
+          ></div>
+          <ul class="article-details">
+            <li class="article-author">
+              <a href="#"><i class="fa-solid fa-location-dot"></i> Cairo</a>
+            </li>
+            <li class="article-date">
+              <i class="fa-solid fa-building-columns"></i> Misr Al-Qadima
+            </li>
+          </ul>
+        </div>
+        <div class="article-description">
+          <h1>Mastering the Language</h1>
+          <h2>Java is not the same as JavaScript</h2>
+          <p>
+            Cairo is associated with ancient Egypt, as the Giza pyramid complex
+            and the ancient cities of Memphis and Heliopolis are located in its
+            geographical area. Located near the Nile Delta...
+          </p>
+          <p class="article-read-more">
+            <a href="blog.html">Read More</a>
+          </p>
+        </div>
+      </div>
+      <div class="article-card">
+        <div class="article-meta">
+          <div
+            class="article-photo"
+            style="background-image: url(/public/aswan-2.jpg)"
+          ></div>
+          <ul class="article-details">
+            <li class="article-author">
+              <a href="#"><i class="fa-solid fa-location-dot"></i> Aswan</a>
+            </li>
+            <li class="article-date">
+              <i class="fa-solid fa-building-columns"></i> Abu Simbel
+            </li>
+          </ul>
+        </div>
+        <div class="article-description">
+          <h1>Abu Simbel Temples</h1>
+          <h2>Approximately 1264 BC</h2>
+          <p>
+            Built as royal tombs, the Great Temple of Ramses II and the Temple
+            of Hathor are some of Egypt’s best known archeological sites. Step
+            past the enormous sandstone statues carved into the temple...
+          </p>
+          <p class="article-read-more">
+            <a href="blog.html">Read More</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="article-card alt">
+        <div class="article-meta">
+          <div
+            class="article-photo"
+            style="background-image: url(public/karnak-3.jpeg)"
+          ></div>
+          <ul class="article-details">
+            <li class="article-author">
+              <a href="#"><i class="fa-solid fa-location-dot"></i> Karnak</a>
+            </li>
+            <li class="article-date">
+              <i class="fa-solid fa-building-columns"></i> Karnak Temple
+            </li>
+          </ul>
+        </div>
+        <div class="article-description">
+          <h1>Karnak Temple</h1>
+          <h2>Ancient Thebes with its Necropolis</h2>
+          <p>
+            Ancient architecture goes monumental at this landmark in Luxor,
+            which houses magnificent statues, columns, and the largest place of
+            worship ever constructed—just a stone’s throw from downtown traffic.
+            Construction of Karnak Temple spanned more than 1,000 years...
+          </p>
+          <p class="article-read-more">
+            <a href="blog.html">Read More</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End Blog -->
+    <!-- Start Reviews -->
+    <div class="text-slider">
+      <h1 class="heading">Our Clients Reviews</h1>
+      <div class="text-slides">
+        <!-- Start client review -->
+        <div class="review-container">
+          <div class="review-header">
+            <div class="review-icon-section">
+              <img
+                src="public/facebook.svg"
+                width="30"
+                height="30"
+                alt="icon"
+              />
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+            </div>
+            <div class="review-date">2/1/20</div>
+          </div>
+          <p class="review-description">
+            Informative and Fun! - Had an awesome experience with this tour. I
+            enjoyed seeing all the sights around Luxor and learned a lot.
+            Mohamed was very kind, taught us a lot, and communicated well in
+            English for us. Overall very happy with our tour!
+          </p>
+        </div>
+        <!-- End client review -->
+        <!-- Start client review -->
+        <div class="review-container">
+          <div class="review-header">
+            <div class="review-icon-section">
+              <img
+                src="public/facebook.svg"
+                width="30"
+                height="30"
+                alt="icon"
+              />
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+            </div>
+            <div class="review-date">28/12/20</div>
+          </div>
+          <p class="review-description">
+            Friendly, informative and fun! - Great tour with some awesome local
+            knowledge! I highly recommend. Thank you so much for taking us under
+            your wing and teaching us about the great history here in Luxor
+          </p>
+        </div>
+        <!-- End client review -->
+        <!-- Start client review -->
+        <div class="review-container">
+          <div class="review-header">
+            <div class="review-icon-section">
+              <img
+                src="public/facebook.svg"
+                width="30"
+                height="30"
+                alt="icon"
+              />
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+            </div>
+            <div class="review-date">28/9/24</div>
+          </div>
+          <p class="review-description">
+            Our trip to Luxor, Egypt - Mohamed was good, helped us a lot and we
+            had a great time in Luxor. The place we stayed in was good, They
+            took good care of us and we appreciate it. We're definitely going to
+            visit again.
+          </p>
+        </div>
+        <!-- End client review -->
+        <!-- Start client review -->
+        <div class="review-container">
+          <div class="review-header">
+            <div class="review-icon-section">
+              <img
+                src="public/facebook.svg"
+                width="30"
+                height="30"
+                alt="icon"
+              />
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+            </div>
+            <div class="review-date">17/12/24</div>
+          </div>
+          <p class="review-description">
+            Excellent experience - excellent experience. I feel very safe with
+            the guide in all the places we visited because they took care of us
+            like their “children”, helped us get the best prices and visit the
+            best places
+          </p>
+        </div>
+        <!-- End client review -->
+        <!-- Start client review -->
+        <div class="review-container">
+          <div class="review-header">
+            <div class="review-icon-section">
+              <img
+                src="public/facebook.svg"
+                width="30"
+                height="30"
+                alt="icon"
+              />
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+            </div>
+            <div class="review-date">30/12/24</div>
+          </div>
+          <p class="review-description">
+            Good Mohamed - Amazing good experience , good time , good food and
+            the most important good prices Mohamed makes your day better , is a
+            good person and he have a hostel if you want good prives
+          </p>
+        </div>
+        <!-- End client review -->
+        <!-- Start client review -->
+        <div class="review-container">
+          <div class="review-header">
+            <div class="review-icon-section">
+              <img
+                src="public/facebook.svg"
+                width="30"
+                height="30"
+                alt="icon"
+              />
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+            </div>
+            <div class="review-date">20/2/24</div>
+          </div>
+          <p class="review-description">
+            The tour in Egypt that you’re looking for - A professional and
+            engaging tour among the most iconic and historical sites in Egypt.
+            The tour guy was simply fantastic.
+          </p>
+        </div>
+        <!-- End client review -->
+        <!-- Start client review -->
+        <div class="review-container">
+          <div class="review-header">
+            <div class="review-icon-section">
+              <img
+                src="public/facebook.svg"
+                width="30"
+                height="30"
+                alt="icon"
+              />
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+            </div>
+            <div class="review-date">11/3/24</div>
+          </div>
+          <p class="review-description">
+            Thanks for the experience - Tour was excellent value. Hatshepsut
+            Temple, Valley of Kings, Karnak Temple were the highlights. Mohamed
+            was informative and also accomadating. Nothing was a problem. Thanks
+            for the tour Mohamed
+          </p>
+        </div>
+        <!-- End client review -->
+        <!-- Start client review -->
+        <div class="review-container">
+          <div class="review-header">
+            <div class="review-icon-section">
+              <img
+                src="public/facebook.svg"
+                width="30"
+                height="30"
+                alt="icon"
+              />
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+              <span class="review-star review-secondary"></span>
+            </div>
+            <div class="review-date">7/6/24</div>
+          </div>
+          <p class="review-description">
+            Excellent experience - excellent experience. I feel very safe with
+            the guide in all the places we visited because they took care of us
+            like their “children”, helped us get the best prices and visit the
+            best places
+          </p>
+        </div>
+        <!-- End client review -->
+      </div>
+    </div>
+    <!-- End Reviews -->
+    <!-- Start Scroll To Top -->
+    <span class="up"><i class="fa-solid fa-angles-up"></i></span>
+    <!-- End Scroll To Top -->
+    <!-- Start Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Contact Info</h3>
+          <p>Open 24 7.</p>
+          <a href="#"
+            ><i class="fa-solid fa-envelope"></i> admin@travellingegypt.com</a
+          ><br />
+          <a href="#"><i class="fa-solid fa-phone"></i> +(20)1095416452</a
+          ><br />
+        </div>
+        <div class="footer-column">
+          <h3>Destinations</h3>
+          <ul>
+            <li>Luxor</li>
+            <li>Aswan</li>
+            <li>Cairo</li>
+            <li>Giza</li>
+            <li>Hurghada</li>
+          </ul>
+        </div>
+        <!-- Activities Column -->
+        <div class="footer-column">
+          <h3>Activities</h3>
+          <ul>
+            <li>Nile Cruise</li>
+            <li>City Tour</li>
+            <li>Hot Air Balloon</li>
+            <li>Boating</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Trip Types</h3>
+          <ul>
+            <li>Budget Travel</li>
+            <li>Solo Traveler</li>
+            <li>Couples</li>
+            <li>Cultural</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom flexCenter">
+        <p>Copyright &copy;2024 Traveling Egypt.</p>
+        <div class="text-16 mr-8 gap-12 flex">
+          <a href="#"><i class="fa-solid fa-phone mobile-visb-2"></i></a>
+          <a href="#"><i class="fa-solid fa-envelope mobile-visb"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="main.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
