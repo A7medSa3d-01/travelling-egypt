@@ -1706,7 +1706,7 @@ a {
 /* Start Blog Page */
 .blog-sectionn {
   margin: 4rem 0;
-  background-image: url(/public/luxor.jpg);
+  background-image: url(public/luxor.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
