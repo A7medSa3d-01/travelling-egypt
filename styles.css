@@ -570,6 +570,7 @@ a {
 
 .logo img {
   display: block;
+  border-radius: 50%;
 }
 
 .mobile-nav {
@@ -973,10 +974,20 @@ a {
   overflow: hidden;
   width: 400px;
   text-align: center;
-  transition: all 10.3s ease;
+  /* transition: all 10.3s ease; */
   overflow: hidden;
   cursor: pointer;
   margin-top: 8px;
+}
+@media (max-width: 400px) {
+  .tour-card {
+    padding: 0 16px;
+  }
+}
+@media (max-width: 370px) {
+  .tour-card {
+    padding: 0 30px;
+  }
 }
 
 .tour-card:hover img {
@@ -1328,6 +1339,11 @@ a {
   border-top: 1px solid #bdc3c7;
   padding-top: 10px;
 }
+@media (max-width: 400px) {
+  .footer-bottom{
+    flex-direction: column;
+  }
+}
 
 /* End Footer */
 /* Start All Trips Page */
@@ -1359,6 +1375,11 @@ a {
   border-radius: 5px;
   overflow: hidden;
   z-index: 0;
+}
+@media (max-width: 900px) {
+  .article-card {
+    margin: 2rem 20px;
+  }
 }
 
 .article-card a {
@@ -1752,7 +1773,26 @@ a {
   margin: 0 15px;
   color: var(--white-color);
 }
-
+@media (max-width: 400px) {
+  .nav-list .nav-item a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 340px) {
+  .nav-list .nav-item a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  .nav-list .nav-item a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 300px) {
+  .nav-list .nav-item a {
+    font-size: 10px;
+  }
+}
 .nav-item .nav-link {
   font-size: 22px;
   background-color: var(--white-color);
