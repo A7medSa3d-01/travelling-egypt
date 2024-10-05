@@ -4,8 +4,11 @@
 // *****************************
 const slidesContainer = document.querySelector('.slides');
 const slideImages = [
-  'public/aswan-2.jpg',
   'public/luxor-2.jpg',
+  'public/cairo-2.jpg',
+  'public/cairo-2.jpg',
+  'public/aswan-2.jpg',
+  'public/cairo-2.jpg',
   'public/cairo-2.jpg',
 ];
 

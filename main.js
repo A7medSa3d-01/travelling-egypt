@@ -73,6 +73,10 @@ const slideImages = [
   'public/aswan-2.jpg',
   'public/luxor-2.jpg',
   'public/cairo-2.jpg',
+  'public/cairo-2.jpg',
+  'public/cairo-2.jpg',
+  'public/cairo-2.jpg',
+  'public/cairo-2.jpg',
 ];
 
 let index = 0;
@@ -124,7 +128,11 @@ const textSlidesContainer = document.querySelector('.text-slides');
 const slideTexts = [
   'This is the first paragraph in the text slider.',
   'Here is another paragraph in the text slider.',
-  'The third paragraph completes the text slider.'
+  'The third paragraph completes the text slider.',
+  'The third paragraph completes the text slider.',
+  'The third paragraph completes the text slider.',
+  'The third paragraph completes the text slider.',
+  'The third paragraph completes the text slider.',
 ];
 
 let textIndex = 0;
