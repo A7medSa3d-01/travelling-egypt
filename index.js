@@ -1,4 +1,35 @@
+window.addEventListener('resize', function () {
+  document.body.style.overflowX = 'hidden';
+});
 
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.getElementById("header");
+  const mobileNav = document.getElementById("mobile-nav");
+  const menuIcon = document.getElementById("menu-icon");
+  const closeMenu = document.getElementById("close-menu");
+
+  let menuOpen = false;
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 40) {
+      header.classList.add("scrolled");
+      header.style.top = "0"
+    } else {
+      header.classList.remove("scrolled");
+      header.style.top = "46px"
+    }
+  });
+
+  menuIcon.addEventListener("click", function () {
+    mobileNav.style.display = "flex";
+    menuOpen = true;
+  });
+
+  closeMenu.addEventListener("click", function () {
+    mobileNav.style.display = "none";
+    menuOpen = false;
+  });
+});
 // *****************************
 //      Slider Destinations
 // *****************************
@@ -61,6 +92,8 @@ const textSlidesContainer = document.querySelector('.text-slides');
 const slideTexts = [
   'This is the first paragraph in the text slider.',
   'Here is another paragraph in the text slider.',
+  'Here is another paragraph in the text slider.',
+  'Here is another paragraph in the text slider.',
   'The third paragraph completes the text slider.'
 ];
 
@@ -93,7 +126,7 @@ function autoTextSlide() {
   textSlidesContainer.style.transform = `translateX(-${textIndex * textSlideWidth}px)`;
 }
 
-setInterval(autoTextSlide, 4500);
+setInterval(autoTextSlide, 4000);
 
 function updateTextSlideWidth() {
   textSlideWidth = document.querySelector('.text-slide').offsetWidth;

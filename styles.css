@@ -30,6 +30,7 @@ body {
 
 a {
   text-decoration: none;
+  /* color: black; */
 }
 
 .text-white {
@@ -963,6 +964,10 @@ a {
   align-items: center;
 }
 
+.slide {
+  color: black;
+}
+
 .slide img {
   width: 150px;
   height: 150px;
@@ -1213,11 +1218,13 @@ a {
 .trip-price span {
   margin-right: 5px;
 }
-
+.from-price{
+  font-size: 22px;
+}
 .price {
   color: #ff813f;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 22px;
 }
 
 /* End Popular Trip Section */
@@ -2065,10 +2072,12 @@ a {
   .tour-overview .subheading {
     font-size: 1rem;
   }
+
   .tour-overview .overview-list {
     font-size: 12px;
   }
 }
+
 .overview-list li {
   margin-bottom: 10px;
 }
@@ -2113,14 +2122,16 @@ a {
   text-decoration: line-through;
 }
 
-.ballon-flights{
+.ballon-flights {
   padding: 10px 30px;
   font-size: 14px;
   color: #666;
   text-align: left;
   grid-area: 58px;
 }
-.ballon-flights p{
+
+.ballon-flights p {
   margin: 6px 0;
 }
+
 /* Price */
