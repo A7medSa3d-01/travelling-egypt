@@ -79,7 +79,7 @@ a {
 .heading {
   text-align: center;
   color: var(--secondary-color);
-  font-size: 44px;
+  font-size: 46px;
   margin: 38px 0 58px;
   font-weight: bold;
   text-transform: capitalize;
@@ -385,6 +385,10 @@ a {
   margin: 70px;
 }
 
+.mb-400 {
+  margin-bottom: 400px;
+}
+
 .mr-4 {
   margin: 4px;
 }
@@ -671,7 +675,7 @@ a {
   }
 }
 
-@media (max-width: 399px) {
+@media (max-width: 418px) {
   .usm-icon {
     display: none;
   }
@@ -681,7 +685,7 @@ a {
   }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 418px) {
   .mobile-visb-2 {
     display: none;
   }
@@ -1817,7 +1821,7 @@ a {
 }
 
 .nav-item {
-  display: inline;
+  display: inline-block;
   margin: 0 15px;
   color: var(--white-color);
 }
@@ -1922,3 +1926,201 @@ a {
     width: 100%;
   }
 }
+
+/* Start Trip Page */
+.trip-flx {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .trip-flx {
+    flex-direction: column;
+  }
+}
+
+.trip-slector {
+  display: flex;
+  gap: 20px;
+}
+
+/* End Trip Page */
+/* Start Places */
+.places-container {
+  width: 100%;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.places-img-container {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .places-img-container {
+    height: 170px;
+  }
+}
+
+@media (max-width: 400px) {
+  .places-img-container {
+    height: 100px;
+  }
+}
+
+.places-img-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.places-details {
+  text-align: center;
+}
+
+.places-details-title .heading {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.places-details-title .description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: var(--gray-color);
+}
+
+@media (max-width: 767px) {
+  .places-details-title .description {
+    font-size: 12px;
+    margin-bottom: 20px;
+    padding: 3px;
+  }
+
+  .places-details-title .heading {
+    font-size: 1.5rem;
+  }
+}
+
+.places-details-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-item i {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+}
+
+@media (max-width: 767px) {
+  .places-details-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+.places-container .places-details .places-details-info span {
+  font-size: 12px;
+  color: var(--gray-color);
+}
+
+/* Tour Overview Styles */
+.tour-overview {
+  margin: 30px 0;
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+  padding: 0 16px;
+}
+
+.tour-overview .subheading {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.tour-overview .overview-list {
+  font-size: 1rem;
+  color: #666;
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .tour-overview .subheading {
+    font-size: 1rem;
+  }
+  .tour-overview .overview-list {
+    font-size: 12px;
+  }
+}
+.overview-list li {
+  margin-bottom: 10px;
+}
+
+/* End Places */
+/* Price */
+.places-price {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  width: 200px;
+  height: 60px;
+  border-radius: 8px;
+  margin-bottom: 90px;
+  font-size: 20px;
+  gap: 10px;
+  background-color: var(--secondary-color);
+  color: rgb(45, 45, 45);
+}
+
+.places-price::after {
+  content: "discount!";
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -10px;
+  right: -20px;
+  width: 50px;
+  height: 18px;
+  padding: 4px;
+  border-radius: 16px;
+  background-color: var(--eee-color);
+}
+
+.places-price span {
+  text-decoration: line-through;
+}
+
+.ballon-flights{
+  padding: 10px 30px;
+  font-size: 14px;
+  color: #666;
+  text-align: left;
+  grid-area: 58px;
+}
+.ballon-flights p{
+  margin: 6px 0;
+}
+/* Price */
