@@ -546,6 +546,12 @@ a {
   color: var(--white-color);
   margin-bottom: 2px;
 }
+.fa-map-marker-alt {
+  color: var(--secondary-color);
+}
+.fa-clock {
+  color: var(--secondary-color);
+}
 
 /* colors */
 .gray-color {
@@ -973,6 +979,9 @@ a {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
+}
+.slide p {
+  color: var(--gray-color);
 }
 
 @media (max-width: 767px) {
@@ -1962,7 +1971,7 @@ a {
 }
 
 .places-img-container {
-  height: 300px;
+  height: 400px;
   width: 100%;
   overflow: hidden;
 }

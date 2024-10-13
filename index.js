@@ -35,12 +35,19 @@ document.addEventListener("DOMContentLoaded", function () {
 // *****************************
 const slidesContainer = document.querySelector('.slides');
 const slideImages = [
-  'public/luxor-2.jpg',
-  'public/cairo-2.jpg',
-  'public/cairo-2.jpg',
-  'public/aswan-2.jpg',
-  'public/cairo-2.jpg',
-  'public/cairo-2.jpg',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
 ];
 
 let index = 0;
@@ -52,7 +59,6 @@ function createSlides() {
     slide.classList.add('slide');
     const img = document.createElement('img');
     img.src = image;
-    img.alt = 'Image';
     slide.appendChild(img);
     slidesContainer.appendChild(slide);
   });
@@ -73,7 +79,7 @@ function autoSlide() {
   slidesContainer.style.transform = `translateX(-${index * slideWidth}px)`;
 }
 
-setInterval(autoSlide, 3000);
+setInterval(autoSlide, 2000);
 
 function updateSlideWidth() {
   slideWidth = document.querySelector('.slide').offsetWidth;
@@ -90,11 +96,14 @@ window.addEventListener('resize', updateSlideWidth);
 
 const textSlidesContainer = document.querySelector('.text-slides');
 const slideTexts = [
-  'This is the first paragraph in the text slider.',
-  'Here is another paragraph in the text slider.',
-  'Here is another paragraph in the text slider.',
-  'Here is another paragraph in the text slider.',
-  'The third paragraph completes the text slider.'
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  ''
 ];
 
 let textIndex = 0;
@@ -126,7 +135,7 @@ function autoTextSlide() {
   textSlidesContainer.style.transform = `translateX(-${textIndex * textSlideWidth}px)`;
 }
 
-setInterval(autoTextSlide, 4000);
+setInterval(autoTextSlide, 4500);
 
 function updateTextSlideWidth() {
   textSlideWidth = document.querySelector('.text-slide').offsetWidth;
