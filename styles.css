@@ -2236,10 +2236,10 @@ em {
 .green-true-sign li::before {
   content: "✔";
   color: green;
-  font-size: 18px;
+  font-size: 20px;
   position: absolute;
-  left: -16px;
-  top: 3px;
+  left: -20px;
+  top: -3px;
 }
 
 /* End Places */
