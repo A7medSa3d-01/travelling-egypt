@@ -470,6 +470,7 @@ a {
 .fs-16 {
   font-size: 18px;
 }
+
 .fs-20 {
   font-size: 20px;
   color: #666;
@@ -479,6 +480,7 @@ a {
   .fs-16 {
     font-size: 16px;
   }
+
   .fs-20 {
     font-size: 18px;
   }
@@ -1106,11 +1108,12 @@ a {
   font-weight: bold;
   transition: all 0.3s ease;
 }
+
 @media (max-width:370px) {
   .tour-card .packages {
     right: 50px;
   }
-  
+
 }
 
 .tour-card:hover>.packages {
@@ -1141,6 +1144,7 @@ a {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
 }
+
 .itinerary-section h1 {
   font-size: 36px;
   margin: 12px 0;
@@ -1173,6 +1177,12 @@ a {
 
 .day-details {
   padding: 10px 0;
+}
+.day-details > p{
+  font-size: 18px;
+  padding: 6px 9px;
+  color: var(--primary-color);
+  line-height: 1.8;
 }
 
 .day-list {
@@ -1216,6 +1226,7 @@ em {
     font-size: 1.2em;
   }
 }
+
 /* End itinerary */
 /* End Major Places */
 /* Start Popular Trip Section */
@@ -1276,7 +1287,7 @@ em {
 
 .trip-name {
   margin-top: 0.4rem;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
   color: black;
 }
@@ -2208,9 +2219,11 @@ em {
   padding-left: 20px;
   margin-bottom: 20px;
 }
-.tour-overview .overview-list li{
+
+.tour-overview .overview-list li {
   margin: 15px 0;
 }
+
 @media (max-width: 767px) {
   .tour-overview .subheading {
     font-size: 1.5rem;
@@ -2239,7 +2252,13 @@ em {
   font-size: 20px;
   position: absolute;
   left: -20px;
-  top: -3px;
+  top: 0px;
+}
+
+@media (max-width: 767px) {
+  .green-true-sign li::before {
+    top: -3px;
+  }
 }
 
 /* End Places */
@@ -2265,7 +2284,7 @@ em {
 }
 
 .places-price:hover {
-    color: white;
+  color: white;
   transform: translateX(-50%) scale(1.05);
   box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
   background-color: var(--secondary-color);
@@ -2289,10 +2308,12 @@ em {
   font-weight: bold;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
+
 .places-price p {
   color: var(--secondary-color);
   transition: 0.3s ease-in-out;
 }
+
 .original-price {
   text-decoration: line-through;
   font-size: 12px;
@@ -2306,6 +2327,7 @@ em {
   font-weight: bold;
   transition: 0.3s ease-in-out;
 }
+
 .places-price:hover p,
 .places-price:hover .discounted-price,
 .places-price:hover .original-price {
