@@ -865,6 +865,7 @@ a {
   bottom: 90px;
   left: 50%;
   transform: translateX(-50%);
+  border-radius: 14px;
 }
 
 @media (max-width: 867px) {
