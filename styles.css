@@ -1243,6 +1243,12 @@ em {
   font-size: 28px;
   margin-bottom: 40px;
 }
+.con-sub-head{
+  text-align: center;
+  color: gray;
+  margin-bottom: 40px;
+  margin-top: -40px;
+}
 
 .trip-grid {
   display: grid;
@@ -1278,6 +1284,7 @@ em {
 
 .trip-details {
   padding: 1.4rem;
+  position: relative;
 }
 
 .star-rating {
@@ -1287,7 +1294,7 @@ em {
 
 .trip-name {
   margin-top: 0.4rem;
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 500;
   color: black;
 }
@@ -1300,6 +1307,8 @@ em {
   font-size: 15px;
   color: rgba(0, 0, 0, 0.7);
 }
+.trip-city i{
+margin-top: 3px;}
 
 .divider {
   width: 100%;
@@ -1312,6 +1321,7 @@ em {
   display: flex;
   align-items: center;
   margin-top: 0.5rem;
+  padding-left: 30px;
 }
 
 .rating {

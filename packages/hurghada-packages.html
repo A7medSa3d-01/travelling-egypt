@@ -252,9 +252,14 @@
       <div class="places-slider">
         <div class="places-img-container">
           <img
-            src="../public/hurghada.jpg"
+            src="../public/boat-copy.jpg"
             alt="hurghada"
             class="slide active"
+          />
+          <img
+            src="../public/hurghada.jpg"
+            alt="hurghada"
+            class="slide"
           />
           <img
             src="../public/hurghada-marina.jpeg"
@@ -276,7 +281,8 @@
         <span class="close-gallery" onclick="closeGallery()">&times;</span>
         <div class="gallery-content">
           <div class="gallery-images">
-            <img src="../public/hurghada.jpg" alt="hurghada" class="active" />
+            <img src="../public/boat-copy.jpg" alt="hurghada" class="active" />
+            <img src="../public/hurghada.jpg" alt="hurghada" />
             <img
               src="../public/hurghada-marina.jpeg"
               alt="hurghada-marina"
@@ -326,22 +332,29 @@
         <div class="tour-overview">
           <h2 class="subheading">Tour Overview</h2>
           <strong>
-          Booking this Hurghada Private Boat Cruise and Snorkeling Experience
-          ahead of your visit to Hurghada guarantees you and your group of up to
-          10 people time on the water in an intimate setting. You’ll get a full
-          day of cruising and head out to the Giftun Islands—plus, you can
-          choose to go snorkeling in the Red Sea to see sea life in its natural
-          habitat. A seafood lunch buffet is included, along with non-alcoholic
-          drinks.
+            Booking this Hurghada Private Boat Cruise and Snorkeling Experience
+            ahead of your visit to Hurghada guarantees you and your group of up
+            to 10 people time on the water in an intimate setting. You’ll get a
+            full day of cruising and head out to the Giftun Islands—plus, you
+            can choose to go snorkeling in the Red Sea to see sea life in its
+            natural habitat. A seafood lunch buffet is included, along with
+            non-alcoholic drinks.
           </strong>
           <ul class="overview-list">
-            <li>Cruise in private boat all the out to Giftun Islands from Hurghada.</li>
-            <li>Perfect for families or groups of friends of up to 8 travelers.</li>
             <li>
-              No need to worry about food—lunch and coffee and soda are included.
+              Cruise in private boat all the out to Giftun Islands from
+              Hurghada.
             </li>
             <li>
-              A private cruise allows you to find snorkeling spots away from the crowds.
+              Perfect for families or groups of friends of up to 8 travelers.
+            </li>
+            <li>
+              No need to worry about food—lunch and coffee and soda are
+              included.
+            </li>
+            <li>
+              A private cruise allows you to find snorkeling spots away from the
+              crowds.
             </li>
           </ul>
         </div>
@@ -351,23 +364,17 @@
             <li>Hotel Pick up & Drop off & Air-conditioned vehicle.</li>
             <li>8 Hours Private Boat Trip.</li>
             <li>2 Stops Snorkeling With Snorkeling guide.</li>
-            <li>
-              Use of Snorkeling equipment & Life Jacket.
-            </li>
-            <li>
-              Visit Dolphin House Hurghada.
-            </li>
-            <li>
-              Lunch and Fruits Coffee and/or Tea & Water & Soda/Pop.
-            </li>
+            <li>Use of Snorkeling equipment & Life Jacket.</li>
+            <li>Visit Dolphin House Hurghada.</li>
+            <li>Lunch and Fruits Coffee and/or Tea & Water & Soda/Pop.</li>
             <li>The tour is fully customizable.</li>
           </ul>
         </div>
         <!-- Tour Overview Section -->
         <!-- Price -->
-        <div class="places-price flex">
-          <span>$400</span>
-          $350
+        <div class="places-price">
+          <span class="original-price">$400</span>
+          <span class="discounted-price">$349</span>
         </div>
         <!-- Price -->
       </div>
@@ -458,8 +465,61 @@
     <!-- End Location Section -->
     <!-- Start Popular Trip Section -->
     <div class="container">
-      <h1 class="heading">Related Trips</h1>
+      <h1 class="heading">Related Packages</h1>
       <div class="trip-grid">
+        <div class="trip-card">
+          <a href="../packages/luxor-aswan-packages.html">
+            <div class="image-container">
+              <img
+                src="../public/luxor-3.jpg"
+                alt="Luxor Temple"
+                class="trip-image"
+              />
+            </div>
+            <div class="trip-details">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="trip-name">
+                Nile Cruise Luxor-Aswan with Hot Air Balloon Experience
+              </h1>
+              <p class="trip-city">
+                <i class="fas fa-map-marker-alt"></i> Luxor-Aswan
+              </p>
+              <p class="trip-city"><i class="fas fa-clock"></i> 5 Days</p>
+              <div
+                class="price"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: flex-end;
+                  gap: 20px;
+                  font-size: 28px;
+                  margin-right: 10px;
+                "
+              >
+                <div
+                  class="original-price"
+                  style="font-size: 20px; color: gray; font-weight: lighter"
+                >
+                  $440
+                </div>
+                $399
+              </div>
+              <div class="divider"></div>
+              <div class="review-info">
+                <div class="rating">5/5</div>
+                <h1 class="review-text">
+                  Excellent <span class="review-count">(319 Reviews)</span>
+                </h1>
+              </div>
+            </div>
+          </a>
+        </div>
         <div class="trip-card">
           <a href="../packages/luxor-packages.html">
             <div class="image-container">
@@ -478,53 +538,36 @@
                 <i class="fas fa-star"></i>
               </div>
               <div class="trip-name">
-                Luxor 2-Day Package: <br />Top Attractions & Exciting
-                Adventures
+                Luxor 2-Day Package: Top Attractions & Exciting Adventures
               </div>
               <p class="trip-city">
                 <i class="fas fa-map-marker-alt"></i> Luxor
               </p>
               <p class="trip-city"><i class="fas fa-clock"></i> 2 Days</p>
+              <div
+                class="price"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: flex-end;
+                  gap: 20px;
+                  font-size: 28px;
+                  margin-right: 10px;
+                "
+              >
+                <div
+                  class="original-price"
+                  style="font-size: 20px; color: gray; font-weight: lighter"
+                >
+                  $200
+                </div>
+                $170
+              </div>
               <div class="divider"></div>
               <div class="review-info">
                 <div class="rating">5/5</div>
                 <h1 class="review-text">
-                  Excellent <span class="review-count">(122 Reviews)</span>
-                </h1>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="trip-card">
-          <a href="../packages/luxor-aswan-packages.html">
-            <div class="image-container">
-              <img
-                src="../public/karnak-3.jpeg"
-                alt="Luxor Temple"
-                class="trip-image"
-              />
-            </div>
-            <div class="trip-details">
-              <div class="star-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <h1 class="trip-name">
-                Nile Cruise Luxor-Aswan <br />
-                with Hot Air Balloon Experience
-              </h1>
-              <p class="trip-city">
-                <i class="fas fa-map-marker-alt"></i> Luxor-Aswan
-              </p>
-              <p class="trip-city"><i class="fas fa-clock"></i> 5 Days</p>
-              <div class="divider"></div>
-              <div class="review-info">
-                <div class="rating">5/5</div>
-                <h1 class="review-text">
-                  Excellent <span class="review-count">(319 Reviews)</span>
+                  Excellent <span class="review-count">(174 Reviews)</span>
                 </h1>
               </div>
             </div>
@@ -534,7 +577,7 @@
           <a href="../packages/hurghada-packages.html">
             <div class="image-container">
               <img
-                src="../public/hurghada.jpg"
+                src="../public/boat.avif"
                 alt="Luxor Temple"
                 class="trip-image"
               />
@@ -548,13 +591,31 @@
                 <i class="fas fa-star"></i>
               </div>
               <div class="trip-name">
-                Private Boat Snorkeling Trip <br />
-                And Lunch Up To 8 Pax From Hurghada
+                Private Boat Snorkeling Trip And Lunch From Hurghada
               </div>
               <p class="trip-city">
                 <i class="fas fa-map-marker-alt"></i> Hurghada
               </p>
               <p class="trip-city"><i class="fas fa-clock"></i> 8 hours</p>
+              <div
+                class="price"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: flex-end;
+                  gap: 20px;
+                  font-size: 28px;
+                  margin-right: 10px;
+                "
+              >
+                <div
+                  class="original-price"
+                  style="font-size: 20px; color: gray; font-weight: lighter"
+                >
+                  $400
+                </div>
+                $350
+              </div>
               <div class="divider"></div>
               <div class="review-info">
                 <div class="rating">5/5</div>
@@ -589,6 +650,25 @@
                 <i class="fas fa-map-marker-alt"></i> Aswan
               </p>
               <p class="trip-city"><i class="fas fa-clock"></i> 2 Days</p>
+              <div
+                class="price"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: flex-end;
+                  gap: 20px;
+                  font-size: 28px;
+                  margin-right: 10px;
+                "
+              >
+                <div
+                  class="original-price"
+                  style="font-size: 20px; color: gray; font-weight: lighter"
+                >
+                  $170
+                </div>
+                $155
+              </div>
               <div class="divider"></div>
               <div class="review-info">
                 <div class="rating">5/5</div>
@@ -617,17 +697,36 @@
                 <i class="fas fa-star"></i>
               </div>
               <div class="trip-name">
-                3 day cairo city tour and giza pyramids tour
+                2 day cairo city tour and giza pyramids tour
               </div>
               <p class="trip-city">
                 <i class="fas fa-map-marker-alt"></i> Cairo
               </p>
-              <p class="trip-city"><i class="fas fa-clock"></i> 20 minutes</p>
+              <p class="trip-city"><i class="fas fa-clock"></i> 2 Days</p>
+              <div
+                class="price"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: flex-end;
+                  gap: 20px;
+                  font-size: 28px;
+                  margin-right: 10px;
+                "
+              >
+                <div
+                  class="original-price"
+                  style="font-size: 20px; color: gray; font-weight: lighter"
+                >
+                  $200
+                </div>
+                $179
+              </div>
               <div class="divider"></div>
               <div class="review-info">
                 <div class="rating">5/5</div>
                 <h1 class="review-text">
-                  Excellent <span class="review-count">(19 Reviews)</span>
+                  Excellent <span class="review-count">(490 Reviews)</span>
                 </h1>
               </div>
             </div>
@@ -650,16 +749,90 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
               </div>
-              <div class="trip-name">10 days 9 nights Egypt in the fullest Version</div>
+              <div class="trip-name">
+                10 days 9 nights Egypt in the fullest Version
+              </div>
               <p class="trip-city">
                 <i class="fas fa-map-marker-alt"></i> Egypt
               </p>
               <p class="trip-city"><i class="fas fa-clock"></i> 3 hours</p>
+              <div
+                class="price"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: flex-end;
+                  gap: 20px;
+                  font-size: 28px;
+                  margin-right: 10px;
+                "
+              >
+                <div
+                  class="original-price"
+                  style="font-size: 20px; color: gray; font-weight: lighter"
+                >
+                  $1700
+                </div>
+                $1535
+              </div>
               <div class="divider"></div>
               <div class="review-info">
                 <div class="rating">5/5</div>
                 <h1 class="review-text">
-                  Excellent <span class="review-count">(19 Reviews)</span>
+                  Excellent <span class="review-count">(1241 Reviews)</span>
+                </h1>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="trip-card">
+          <a href="../places/nile-cruise.html">
+            <div class="image-container">
+              <img
+                src="../public/nile-criuse.avif"
+                alt="Luxor Temple"
+                class="trip-image"
+              />
+            </div>
+            <div class="trip-details">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="trip-name">Nile Cruise Luxor and Aswan</div>
+              <p class="trip-city">
+                <i class="fas fa-map-marker-alt"></i> Luxor - Aswan
+              </p>
+              <p class="trip-city">
+                <i class="fas fa-clock"></i> 3, 4, 7 Nights
+              </p>
+              <div
+                class="price"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: flex-end;
+                  gap: 20px;
+                  font-size: 28px;
+                  margin-right: 10px;
+                "
+              >
+                <div
+                  class="original-price"
+                  style="font-size: 20px; color: gray; font-weight: lighter"
+                >
+                  $110
+                </div>
+                $90
+              </div>
+              <div class="divider"></div>
+              <div class="review-info">
+                <div class="rating">5/5</div>
+                <h1 class="review-text">
+                  Excellent <span class="review-count">(160 Reviews)</span>
                 </h1>
               </div>
             </div>
