@@ -901,6 +901,12 @@ a {
   color: #000000;
 }
 
+@media (max-width: 800px) {
+  .form-group {
+    margin-bottom: 17px;
+  }
+}
+
 .destination {
   color: black;
 }
@@ -1179,7 +1185,8 @@ a {
 .day-details {
   padding: 10px 0;
 }
-.day-details > p{
+
+.day-details>p {
   font-size: 18px;
   padding: 6px 9px;
   color: var(--primary-color);
@@ -1244,7 +1251,8 @@ em {
   font-size: 28px;
   margin-bottom: 40px;
 }
-.con-sub-head{
+
+.con-sub-head {
   text-align: center;
   color: gray;
   margin-bottom: 40px;
@@ -1308,8 +1316,10 @@ em {
   font-size: 15px;
   color: rgba(0, 0, 0, 0.7);
 }
-.trip-city i{
-margin-top: 3px;}
+
+.trip-city i {
+  margin-top: 3px;
+}
 
 .divider {
   width: 100%;
