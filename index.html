@@ -22,6 +22,20 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-W68TGS3CWQ"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-W68TGS3CWQ");
+  </script>
   <body>
     <!-- Top Header -->
     <section class="top-header flexAround">
@@ -142,7 +156,7 @@
           </div>
           <div class="form-group">
             <label for="date">Select your date:</label>
-            <input type="date" id="date" placeholder="mm/dd/yyyy"/>
+            <input type="date" id="date" placeholder="mm/dd/yyyy" />
           </div>
           <div class="form-group">
             <label for="destination">Select destination:</label>
@@ -604,7 +618,9 @@
               <p class="trip-city">
                 <i class="fas fa-map-marker-alt"></i> Egypt
               </p>
-              <p class="trip-city"><i class="fas fa-clock"></i>10 days 9 nights</p>
+              <p class="trip-city">
+                <i class="fas fa-clock"></i>10 days 9 nights
+              </p>
               <div
                 class="price"
                 style="
