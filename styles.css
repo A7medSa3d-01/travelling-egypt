@@ -1679,7 +1679,7 @@ em {
   z-index: 1;
 }
 
-.article-description h1 {
+.article-description h3 {
   margin: 0;
   font-size: 1.7rem;
 }
